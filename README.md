@@ -35,3 +35,85 @@
 
 #### Task 2 in the electronics track \
 ##### Connect and program an electronic circuit containing 6 servo motors on the simulation program
+
+#### Circuit programming code:
+```
+#include <Servo.h>
+
+Servo myServo1, myServo2, myServo3, myServo4, myServo5, myServo6;
+
+void setup() {
+  myServo1.attach(12);
+  myServo2.attach(11);
+  myServo3.attach(10);
+  myServo4.attach(9);
+  myServo5.attach(8);
+  myServo6.attach(7);
+}
+
+void loop() {
+  for (int pos = 0; pos <= 90; pos += 1) {
+    myServo1.write(pos);
+    delay(15);
+  }
+  for (int pos = 90; pos >= 0; pos -= 1) {
+    myServo1.write(pos);
+    delay(15);
+  }
+
+  for (int pos = 0; pos <= 90; pos += 1) {
+    myServo2.write(pos);
+    delay(15);
+  }
+  for (int pos = 90; pos >= 0; pos -= 1) {
+    myServo2.write(pos);
+    delay(15);
+  }
+
+  for (int pos = 0; pos <= 90; pos += 1) {
+    myServo3.write(pos);
+    delay(15);
+  }
+  for (int pos = 90; pos >= 0; pos -= 1) {
+    myServo3.write(pos);
+    delay(15);
+  }
+
+  for (int pos = 0; pos <= 90; pos += 1) {
+    myServo4.write(pos);
+    delay(15);
+  }
+  for (int pos = 90; pos >= 0; pos -= 1) {
+    myServo4.write(pos);
+    delay(15);
+  }
+
+  for (int pos = 0; pos <= 90; pos += 1) {
+    myServo5.write(pos);
+    delay(15);
+  }
+  for (int pos = 90; pos >= 0; pos -= 1) {
+    myServo5.write(pos);
+    delay(15);
+  }
+
+  for (int pos = 0; pos <= 90; pos += 1) {
+    myServo6.write(pos);
+    delay(15);
+  }
+  for (int pos = 90; pos >= 0; pos -= 1) {
+    myServo6.write(pos);
+    delay(15);
+  }
+
+  delay(2000); 
+}
+```
+<img src="https://github.com/Samar-Hamed2003/Electronics-track/assets/173670288/a27caa8c-ee31-49d7-9e2e-2bfaa437c0aa.jpg" width="25%" height="25%">
+
+#### Using the TinkerCAD program, we designed the following electrical circuits:
+<img src="https://github.com/Samar-Hamed2003/Electronics-track/assets/173670288/69f600ae-00e8-41b3-b341-5cf8c8c746c2.jpg" width="50%" height="50%">
+
+#### Click to enter the tinkercar website
+https://www.tinkercad.com/things/h9skiVjUw3N-neat-gaaris-turing/editel
+
